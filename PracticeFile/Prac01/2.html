@@ -3,13 +3,38 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+  <style>
+    #vertical_ali {
+      display: grid;
+      grid-template-columns: auto auto;
+    }
+
+    div {
+      padding: 5px;
+    }
+    .block01 {
+      border: 2px black solid;
+    }
+    .block02 {
+      border: 2px black solid;
+    }
+  </style>
   </head>
   <body>
-    <h1><center><a href="test2.html">WEB</a></h1>
-    <h2>CSS</h2>
-    <p>
-      CSS의 C가 Cascading의 약자인데, 이는 상위 요소의 스타일 속성을 자손 요소들에게 상속시켜주는 모습이 DOM 트리구조에서 마치 폭포수처럼 내려가는 모습을 닮았기 때문이다.[1]
-    </p>
-
+    <h1><center><a href="test2WEB.html">WEB</a></h1>
+    <div id="vertical_ali">
+      <div class="block01">
+        <h2>CSS</h2>
+      </div>
+      <div class="block02">
+        <p>
+        CSS의 C가 Cascading의 약자인데, 이는 상위 요소의 스타일 속성을 자손 요소들에게 상속시켜주는 모습이 DOM 트리구조에서 마치 폭포수처럼 내려가는 모습을 닮았기 때문이다.[1]
+        </p>
+      </div>
+      MacBook <br>KeyBoard
+      <div>
+        <img src="Mac_Keyboard.PNG" width="100%">;
+      </div>
+    </div>
   </body>
 </html>

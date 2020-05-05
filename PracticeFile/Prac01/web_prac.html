@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>WEB</title>
+  <style>
+    .subject {
+      padding: 15px;
+      border-bottom: solid black 1.5px;
+    }
+    #horizontal {
+      display: grid;
+      grid-template-columns: 20% 80%;
+    }
+    #horizontal .paragraph {
+      padding: 10px;
+      border-left: solid black 1px;
+    }
+    @media(max-width:650px) {
+        .subject {
+          text-align: center;
+          padding: 15px;
+          border-bottom: solid black 1.5px;
+        }
+        #horizontal {
+          grid-template-columns: auto;
+        }
+        #horizontal .paragraph {
+          padding: 10px;
+          border :0px; /*none으로 설정하자.*/
+          border-top: solid black 1px;
+          font-size: 20px;
+          font-style: italic;
+        }
+      }
+    }
+  </style>
+  </head>
+  <body>
+    <div class="subject">
+      <h1>WEB</h1>
+    </div>
+    <div id="horizontal">
+      <div class="list">
+        <ol>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li><a href="3.html">JavaScript</a></li>
+        </ol>
+      </div>
+      <div class="paragraph">
+        The World Wide Web (WWW), commonly known as the Web,
+        is an information system where documents and other web resources
+        are identified by Uniform Resource Locators
+        (URLs, such as https://www.example.com/), which may be interlinked by hypertext,
+         and are accessible over the Internet. The resources of the WWW are transferred
+         via the Hypertext Transfer Protocol <a href="https://en.wikipedia.org/wiki/HTML">(HTTP)</a> and may be accessed by
+         users by a software application called a web browser and
+          are published by a software application called a web server.
+      </div>
+    </div>
+  </body>
+</html>
