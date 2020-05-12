@@ -14,7 +14,6 @@ h2 {
   position: relative;
 }
 #horzental {
-  font-size: 10px;
   display: grid;
   grid-template-columns: 80% 20%;
   height: 10%;
@@ -25,9 +24,23 @@ h2 {
   font-size: 30px;
 }
 .copyright {
+  font-size: 15px;
   padding: 10px;
   text-align: right;
 }
 input {
   margin-left: 15px;
+}
+.box01 {
+	padding:20px;
+	font-size:25px;
+}
+.box02 {
+	padding:15px;
+	margin-left:20px;
+	font-size:20px;
+}
+li {
+	font-size:30px;
+	padding:10px;
 }

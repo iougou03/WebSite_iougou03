@@ -14,7 +14,7 @@ def showfibo():
     fnum=list()
     number=int(request.form['number'])
     for i in range(number):
-        fnum.append(i+1);
+        fnum.append(fibo(i));
     return render_template('showfibo.html',number=number,fnum=fnum)
 
 if __name__ == "__main__":

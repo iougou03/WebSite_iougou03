@@ -3,15 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>show fibonacci</title>
+	<link rel="stylesheet" href="{{ url_for('static',filename='maincss.css')}}">
   </head>
   <body>
-	  <div class="">
-      <p><h3>You typed...{{number}}</h3></p>
+	<div class="box01">
+		<p><h3><b>You typed...{{number}}</b></h3></p>
     </div>
-    <div class="">
-      {% for i in fnum %}
-        <li>{{i}}</li>
-      {% endfor %}
+    <div class="box02">
+		<ol>
+			{% for i in fnum %}
+				<li>  {{i}}</li>
+			{% endfor %}
+		</ol>
     </div>
   </body>
 </html>
