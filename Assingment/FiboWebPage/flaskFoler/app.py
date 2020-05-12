@@ -11,10 +11,11 @@ def index():
 
 @app.route('/show',methods=['POST'])
 def showfibo():
-    number=request.form['number']
-    fnum= fibo(int(number))
+    fnum=list()
+    number=int(request.form['number'])
+    for i in range(number):
+        fnum.append(i+1);
     return render_template('showfibo.html',number=number,fnum=fnum)
 
 if __name__ == "__main__":
     app.run(debug = True)
-

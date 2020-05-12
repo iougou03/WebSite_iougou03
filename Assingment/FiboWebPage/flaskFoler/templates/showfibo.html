@@ -5,7 +5,13 @@
     <title>show fibonacci</title>
   </head>
   <body>
-	you typed {{number}}!<br>
-	{{number}}th fibonacci is...{{fnum}}
+	  <div class="">
+      <p><h3>You typed...{{number}}</h3></p>
+    </div>
+    <div class="">
+      {% for i in fnum %}
+        <li>{{i}}</li>
+      {% endfor %}
+    </div>
   </body>
 </html>
