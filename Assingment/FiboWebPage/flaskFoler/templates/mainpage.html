@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>Type number for fibonacci</title>
+	<link rel="stylesheet" href="{{ url_for('static',filename='maincss.css') }}">
+  </head>
+  <body>
+    <div id="vertical">
+      <div class="headbox">
+          <h1>Fibonacci</h1>
+      </div>
+      <div class="inputbox">
+        <form class="numberbox" action="http://127.0.0.1:5000/show" method="post">
+          <label for="input_number"><h2>Type here >></h2></label>
+          <input id= "input_number" name="number" type="number" placeholder="type your number" >
+		  <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+    <div id="horzental">
+      <div>
+      </div>
+      <div class="copyright">
+        <b>made from</b><br>
+        iougou03@knu.ac.kr<br>
+        2017116948 권해솔
+      </div>
+    </div>
+
+  </body>
+</html>

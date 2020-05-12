@@ -1,0 +1,33 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+h2 {
+  display:inline;
+}
+#vertical {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 30% 70%;
+  height: 90%;
+  text-align: center;
+  position: relative;
+}
+#horzental {
+  font-size: 10px;
+  display: grid;
+  grid-template-columns: 80% 20%;
+  height: 10%;
+  width: 100%;
+}
+.headbox {
+  padding: 50px;
+  font-size: 30px;
+}
+.copyright {
+  padding: 10px;
+  text-align: right;
+}
+input {
+  margin-left: 15px;
+}
