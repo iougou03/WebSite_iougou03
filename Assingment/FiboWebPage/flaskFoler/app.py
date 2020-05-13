@@ -1,9 +1,8 @@
 from py.fibomethod import fibo
 from flask import Flask, render_template
-from flask import redirect, url_for, request
+from flask import url_for, request
 
 app = Flask(__name__)
-
 
 @app.route('/')
 def index():
